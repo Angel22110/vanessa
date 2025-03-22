@@ -1,0 +1,76 @@
+/* Fondo degradado animado */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #ffdde1);
+    background-size: 400% 400%;
+    animation: fondoAnimado 10s infinite alternate;
+}
+
+/* Animación del fondo */
+@keyframes fondoAnimado {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+
+/* Carta con efecto de aparición */
+.carta {
+    background: white;
+    padding: 20px;
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 1s ease-out forwards;
+}
+
+/* Animación de la carta */
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Título en color llamativo */
+h1 {
+    color: #ff4a57;
+}
+
+/* Estilo del párrafo */
+p {
+    font-size: 18px;
+    color: #333;
+}
+
+/* Botones */
+button {
+    background: #ff4a57;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #d63c47;
+}
+
+/* Ocultar respuesta hasta que se active */
+.oculto {
+    display: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}

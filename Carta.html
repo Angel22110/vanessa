@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Una carta especial</title>
+    <link rel="stylesheet" href="carta CSS.css">
+</head>
+<body>
+    <div class="carta">
+        <h1>Para alguien especial</h1>
+        <p id="texto"></p>
+
+        <div id="pregunta" style="display: none;">
+            <h2>¿Quieres seguir estando a mi lado otro año más?</h2>
+            <button onclick="respuesta('si')">Sí ❤</button>
+            <button onclick="respuesta('no')">No 💔</button>
+        </div>
+
+        <p id="respuesta" class="oculto"></p>
+    </div>
+
+    <script src="Carta.js"></script>
+</body>
+</html>
+   
